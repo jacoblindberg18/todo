@@ -4,12 +4,13 @@ li {
     justify-content: space-between;
 }
 
-a,
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
-
 a:visited {
     color: inherit;
+}
+
+a,
+a:hover,
+.remove {
+    text-decoration: none;
+    cursor: pointer;
 }

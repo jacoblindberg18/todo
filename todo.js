@@ -1,7 +1,6 @@
 const todoItems = document.getElementById("todo-items");
 const todoForm = document.getElementById("todo-form");
 const todoItem = document.getElementById("todo-list-item");
-const removeBtns = [];
 
 function addListItem() {
     let item = $("#todo-list-item").val();
@@ -11,10 +10,10 @@ function addListItem() {
     // a.href = "#";
     li.textContent = todoItem.value;
     todoItems.prepend(li);
+    li.classList.add("list-item");
     li.appendChild(a);
     a.classList.add("remove");
     a.textContent = "x";
-    removeBtn = document.querySelector(".remove");
     console.log("list item:", item);
 }
 
