@@ -1,0 +1,15 @@
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited {
+    color: inherit;
+}
