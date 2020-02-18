@@ -10,7 +10,6 @@ function addCheckbox(li) {
     let checkbox = document.createElement("input");
 
     checkbox.type = "checkbox";
-    checkbox.name = "done";
     checkbox.setAttribute("id", "checkbox");
     li.prepend(checkbox);
 }
