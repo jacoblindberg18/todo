@@ -1,7 +1,6 @@
 li {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
 }
 
 a:visited {
@@ -13,4 +12,13 @@ a:hover,
 .remove {
     text-decoration: none;
     cursor: pointer;
+    margin-left: auto;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
 }
