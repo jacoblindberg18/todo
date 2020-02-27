@@ -44,14 +44,14 @@ todoForm.onsubmit = handleOnSubmit;
 todoItems.addEventListener("change", event => {
     let checkbox = event.target;
     let parent = checkbox.parentElement;
-    let sibling = document.getElementById("checkbox").nextSibling;
+    let sibling = checkbox.nextSibling;
 
     if (checkbox.checked === true) {
-        document.getElementById("checkbox").setAttribute("checked", 0);
+        checkbox.setAttribute("checked", 0);
         sibling.classList.add("completed");
         localStorage.setItem("todoitems", todoItems.innerHTML);
     } else if (checkbox.checked === false) {
-        document.getElementById("checkbox").removeAttribute("checked", 0);
+        checkbox.removeAttribute("checked", 0);
         sibling.classList.remove("completed");
         localStorage.setItem("todoitems", todoItems.innerHTML);
     }
